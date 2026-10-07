@@ -110,9 +110,10 @@ permitted will be provided in the versioned Zenodo archive of this study once it
 
 ## Licence
 
-The source code in this repository is provided under the licence stated for the repository. Third-party datasets,
-pretrained model weights, and external software remain subject to their respective licence and usage terms. See
-[`LICENSE`](LICENSE).
+The source code written for this study (`core/`, `paper_scripts/`, `inference_example/`) is released under the
+[MIT License](LICENSE). Third-party datasets, pretrained model weights, and external software remain subject to their
+respective licence and usage terms (CC BY 4.0 for the dataset annotations; torchvision and Ultralytics terms for
+pretrained weights and software). See [`LICENSE`](LICENSE) for details.
 
 ## Citation
 

@@ -1,0 +1,31 @@
+{
+  "title": "Reproducibility Package for Fine-Tuning Faster R-CNN for Person Detection in Site Surveillance Imagery",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Kim, S. J.",
+      "affiliation": "Institute for Industrial Policy Studies (IPS), aSSIST University, Seoul, Republic of Korea",
+      "orcid": "0009-0007-6876-0777"
+    }
+  ],
+  "description": "<p>Reproducibility archive for the Machine Vision and Applications manuscript <em>Fine-Tuning Faster R-CNN for Person Detection in Site Surveillance Imagery: A Size-Stratified Evaluation Against an Off-the-Shelf COCO-Pretrained Baseline</em> (S. J. Kim).</p><p>The study is a controlled empirical machine-vision study of domain-specific fine-tuning for site-surveillance person detection. This archive contains the training and evaluation code (PyTorch/torchvision), the COCO-format annotations of the public Roboflow \"site dataset\" (CC BY 4.0), stored test-set detections of all evaluated models, bootstrap outputs, intermediate analysis files (scene clusters, training history and log), figure-generation scripts with the manuscript figures, an inference example, reproduction instructions and a SHA-256 manifest.</p><p>Dataset images are not redistributed; they are available from the provider. Trained model weights are not included; their filenames, SHA-256 values, upstream models and redistribution status are documented in docs/MODEL_WEIGHTS.md. The historical scene-held-out checkpoint was not preserved.</p>",
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "person detection",
+    "Faster R-CNN",
+    "transfer learning",
+    "small object detection",
+    "surveillance imagery",
+    "dataset annotation quality",
+    "machine vision"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/seungjin-data/FasterRCNN-Site-Surveillance",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}

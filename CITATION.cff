@@ -3,6 +3,7 @@ message: "If you use this software or the accompanying results, please cite it u
 type: software
 title: "Fine-Tuning Faster R-CNN for Person Detection in Site Surveillance Imagery: reproducibility package"
 version: 1.0.0
+license: MIT
 authors:
   - family-names: Kim
     given-names: S. J.

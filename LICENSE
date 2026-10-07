@@ -1,16 +1,44 @@
-LICENCE STATEMENT
+MIT License
 
-Source code
-  The source code in this repository is provided under the licence stated for the repository.
-  [The author has not yet selected a code licence. No open-source licence is granted until the author adds one here.]
+Copyright (c) 2026 S. J. Kim
 
-Third-party material
-  Third-party datasets, pretrained model weights, and external software remain subject to their respective licence
-  and usage terms. In particular:
-  - Dataset annotations (annotations/): "site dataset" (person detection, v1), Roboflow Universe, CC BY 4.0
-    (https://universe.roboflow.com/domin-td1ad/site-dataset-vrazk). Attribution: see docs/DATASET.md.
-  - PyTorch and torchvision: distributed under their own software licences.
-  - torchvision COCO-pretrained weights used for initialisation: "may have their own licenses or terms and conditions
-    derived from the dataset used for training" (torchvision documentation).
-  - Ultralytics (used only for the YOLOv8m and RT-DETR-L reference runs): AGPL-3.0 or Ultralytics Enterprise licence.
-    The core Faster R-CNN pipeline (core/) does not depend on Ultralytics.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+Scope and third-party material
+
+The MIT License above applies to the source code written by the author in this
+repository (core/, paper_scripts/, inference_example/). Third-party datasets,
+pretrained model weights, and external software remain subject to their
+respective licence and usage terms. In particular:
+
+- Dataset annotations (annotations/): "site dataset" (person detection, v1),
+  Roboflow Universe, CC BY 4.0
+  (https://universe.roboflow.com/domin-td1ad/site-dataset-vrazk);
+  attribution in docs/DATASET.md.
+- PyTorch and torchvision: distributed under their own software licences.
+- torchvision COCO-pretrained weights used for initialisation "may have their
+  own licenses or terms and conditions derived from the dataset used for
+  training" (torchvision documentation).
+- Ultralytics (used only by paper_scripts/ultra_run.py for the YOLOv8m and
+  RT-DETR-L reference runs): AGPL-3.0 or Ultralytics Enterprise licence.
+  Running that script is subject to the Ultralytics licence terms. The core
+  Faster R-CNN pipeline (core/) does not depend on Ultralytics.
+- Trained model weights are not part of this repository; see
+  docs/MODEL_WEIGHTS.md for their status.
