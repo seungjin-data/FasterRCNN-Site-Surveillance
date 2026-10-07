@@ -91,8 +91,9 @@ reported runs.
 ## Model weights
 
 Large binary weights are not stored in this repository. [`docs/MODEL_WEIGHTS.md`](docs/MODEL_WEIGHTS.md) lists each
-trained weight file with its SHA-256, upstream model and redistribution status. Weights whose redistribution is
-permitted will be provided in the versioned Zenodo archive of this study once it is published.
+trained weight file with its SHA-256, upstream model and redistribution status. The Zenodo archive v1.0.0
+(https://doi.org/10.5281/zenodo.23214797) contains no weight files; weights whose redistribution is permitted may be
+added to a later archive version.
 
 ## Limitations
 
