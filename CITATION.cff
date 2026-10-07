@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software or the accompanying results, please cite it using the metadata below."
+type: software
+title: "Fine-Tuning Faster R-CNN for Person Detection in Site Surveillance Imagery: reproducibility package"
+version: 1.0.0
+authors:
+  - family-names: Kim
+    given-names: S. J.
+    affiliation: "Institute for Industrial Policy Studies (IPS), aSSIST University, Seoul, Republic of Korea"
+    orcid: "https://orcid.org/0009-0007-6876-0777"
+repository-code: "https://github.com/seungjin-data/FasterRCNN-Site-Surveillance"
+url: "https://github.com/seungjin-data/FasterRCNN-Site-Surveillance"
+abstract: >-
+  Code, COCO-format annotations, stored test-set detections, bootstrap outputs, intermediate analysis files and
+  figure-generation scripts for a controlled empirical machine-vision study of domain-specific fine-tuning of
+  Faster R-CNN for person detection in fixed-camera site-surveillance imagery.
+keywords:
+  - person detection
+  - Faster R-CNN
+  - transfer learning
+  - small object detection
+  - surveillance imagery
+  - dataset annotation quality
+references:
+  - type: article
+    title: "Fine-Tuning Faster R-CNN for Person Detection in Site Surveillance Imagery: A Size-Stratified Evaluation Against an Off-the-Shelf COCO-Pretrained Baseline"
+    authors:
+      - family-names: Kim
+        given-names: S. J.
+        orcid: "https://orcid.org/0009-0007-6876-0777"
+    journal: "Machine Vision and Applications"
+    status: in-preparation

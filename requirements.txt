@@ -1,0 +1,14 @@
+# Core pipeline (PyTorch/torchvision; no Ultralytics dependency).
+# Versions used in the study: PyTorch 2.5.1, torchvision 0.20.1 (training, RTX 3090).
+# For GPU, install a CUDA build of torch/torchvision from https://pytorch.org first.
+torch>=2.0
+torchvision>=0.15
+pycocotools>=2.0.6
+numpy
+opencv-python>=4.7
+tqdm>=4.65
+# Paper scripts: figures and scene clustering
+matplotlib          # figures were generated with matplotlib 3.10.9 (Fig. 1, 3) and 3.11.2 (Fig. 2, 4-7)
+scikit-learn        # k-means scene clustering (paper_scripts/scene_cluster.py)
+# Optional: Ultralytics reference runs only (paper_scripts/ultra_run.py); AGPL-3.0
+# ultralytics==8.4.87

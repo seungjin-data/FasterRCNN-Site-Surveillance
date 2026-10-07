@@ -1,0 +1,16 @@
+LICENCE STATEMENT
+
+Source code
+  The source code in this repository is provided under the licence stated for the repository.
+  [The author has not yet selected a code licence. No open-source licence is granted until the author adds one here.]
+
+Third-party material
+  Third-party datasets, pretrained model weights, and external software remain subject to their respective licence
+  and usage terms. In particular:
+  - Dataset annotations (annotations/): "site dataset" (person detection, v1), Roboflow Universe, CC BY 4.0
+    (https://universe.roboflow.com/domin-td1ad/site-dataset-vrazk). Attribution: see docs/DATASET.md.
+  - PyTorch and torchvision: distributed under their own software licences.
+  - torchvision COCO-pretrained weights used for initialisation: "may have their own licenses or terms and conditions
+    derived from the dataset used for training" (torchvision documentation).
+  - Ultralytics (used only for the YOLOv8m and RT-DETR-L reference runs): AGPL-3.0 or Ultralytics Enterprise licence.
+    The core Faster R-CNN pipeline (core/) does not depend on Ultralytics.

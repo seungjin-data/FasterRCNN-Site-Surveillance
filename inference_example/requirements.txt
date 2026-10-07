@@ -1,0 +1,5 @@
+# Person detection inference: PyTorch/torchvision implementation; no Ultralytics dependency.
+# For GPU, install CUDA builds of torch/torchvision from https://pytorch.org
+torch>=2.0
+torchvision>=0.15
+opencv-python>=4.7

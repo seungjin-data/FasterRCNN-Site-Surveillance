@@ -1,0 +1,551 @@
+==============================================================================
+Person Detector Training  |  2026-07-01 21:59:02
+==============================================================================
+  data_dir        : ./site dataset.v1-person-detection.coco
+  train_split     : train
+  val_split       : valid
+  ann_name        : _annotations.coco.json
+  arch            : fasterrcnn
+  no_pretrained   : False
+  min_size        : 800
+  max_size        : 1333
+  epochs          : 100
+  batch_size      : 4
+  grad_accum      : 5
+  lr              : 0.005
+  momentum        : 0.9
+  weight_decay    : 0.0005
+  optimizer       : sgd
+  warmup_epochs   : 3.0
+  clip_grad       : 5.0
+  workers         : 4
+  eval_interval   : 5
+  no_amp          : False
+  device          : cuda
+  output_dir      : ./runs/person_detector
+  resume          : None
+  seed            : 42
+  device (resolved): cuda (NVIDIA GeForce RTX 3090)
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+
+Dataset: 1425 train / 161 val images
+AMP: True | steps/epoch: 71 | effective batch: 20
+[Epoch 1] loss=0.7688 lr=1.69e-03 (145.9s)
+[Epoch 2] loss=0.3533 lr=3.36e-03 (100.9s)
+[Epoch 3] loss=0.3030 lr=5.00e-03 (101.6s)
+[Epoch 4] loss=0.2864 lr=5.00e-03 (98.2s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.399
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.765
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.383
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.305
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.429
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.480
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.107
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.468
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.527
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.461
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.543
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.589
+[Epoch 5] loss=0.2706 mAP=0.3990 mAP50=0.7650 mAP_small=0.3050 (96.9s)
+    * new best mAP 0.3990 -> best.pth
+[Epoch 6] loss=0.2737 lr=4.99e-03 (99.8s)
+[Epoch 7] loss=0.2642 lr=4.98e-03 (97.3s)
+[Epoch 8] loss=0.2560 lr=4.97e-03 (97.5s)
+[Epoch 9] loss=0.2545 lr=4.95e-03 (94.4s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.425
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.795
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.410
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.333
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.456
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.510
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.113
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.484
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.530
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.438
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.557
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.595
+[Epoch 10] loss=0.2539 mAP=0.4250 mAP50=0.7948 mAP_small=0.3334 (96.1s)
+    * new best mAP 0.4250 -> best.pth
+[Epoch 11] loss=0.2465 lr=4.92e-03 (96.1s)
+[Epoch 12] loss=0.2473 lr=4.89e-03 (92.7s)
+[Epoch 13] loss=0.2471 lr=4.87e-03 (94.1s)
+[Epoch 14] loss=0.2377 lr=4.84e-03 (95.4s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.427
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.806
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.410
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.344
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.455
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.488
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.115
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.488
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.536
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.478
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.555
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.570
+[Epoch 15] loss=0.2423 mAP=0.4272 mAP50=0.8059 mAP_small=0.3438 (98.3s)
+    * new best mAP 0.4272 -> best.pth
+[Epoch 16] loss=0.2399 lr=4.78e-03 (94.3s)
+[Epoch 17] loss=0.2410 lr=4.75e-03 (93.7s)
+[Epoch 18] loss=0.2397 lr=4.71e-03 (97.9s)
+[Epoch 19] loss=0.2323 lr=4.67e-03 (96.9s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.432
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.807
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.422
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.354
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.463
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.488
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.115
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.490
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.533
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.466
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.556
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.568
+[Epoch 20] loss=0.2287 mAP=0.4319 mAP50=0.8072 mAP_small=0.3537 (97.8s)
+    * new best mAP 0.4319 -> best.pth
+[Epoch 21] loss=0.2307 lr=4.59e-03 (109.7s)
+[Epoch 22] loss=0.2259 lr=4.54e-03 (94.4s)
+[Epoch 23] loss=0.2253 lr=4.49e-03 (91.1s)
+[Epoch 24] loss=0.2262 lr=4.44e-03 (90.3s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.438
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.818
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.444
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.362
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.466
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.499
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.117
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.500
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.535
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.476
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.554
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.575
+[Epoch 25] loss=0.2233 mAP=0.4381 mAP50=0.8175 mAP_small=0.3624 (97.1s)
+    * new best mAP 0.4381 -> best.pth
+[Epoch 26] loss=0.2222 lr=4.34e-03 (96.1s)
+[Epoch 27] loss=0.2205 lr=4.28e-03 (90.1s)
+[Epoch 28] loss=0.2182 lr=4.22e-03 (93.2s)
+[Epoch 29] loss=0.2146 lr=4.16e-03 (100.4s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.432
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.811
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.416
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.355
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.460
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.491
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.115
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.492
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.527
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.461
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.550
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.557
+[Epoch 30] loss=0.2201 mAP=0.4316 mAP50=0.8110 mAP_small=0.3554 (109.4s)
+[Epoch 31] loss=0.2125 lr=4.04e-03 (109.4s)
+[Epoch 32] loss=0.2158 lr=3.98e-03 (117.8s)
+[Epoch 33] loss=0.2121 lr=3.91e-03 (100.1s)
+[Epoch 34] loss=0.2113 lr=3.84e-03 (91.1s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.436
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.812
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.426
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.352
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.467
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.500
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.115
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.494
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.527
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.446
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.556
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.564
+[Epoch 35] loss=0.2123 mAP=0.4358 mAP50=0.8118 mAP_small=0.3519 (93.8s)
+[Epoch 36] loss=0.2111 lr=3.70e-03 (93.8s)
+[Epoch 37] loss=0.2067 lr=3.63e-03 (96.2s)
+[Epoch 38] loss=0.2096 lr=3.56e-03 (90.9s)
+[Epoch 39] loss=0.2070 lr=3.48e-03 (89.7s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.437
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.806
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.429
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.353
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.462
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.509
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.113
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.495
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.530
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.465
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.549
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.574
+[Epoch 40] loss=0.1998 mAP=0.4371 mAP50=0.8055 mAP_small=0.3533 (92.7s)
+[Epoch 41] loss=0.2003 lr=3.33e-03 (91.4s)
+[Epoch 42] loss=0.2003 lr=3.26e-03 (93.5s)
+[Epoch 43] loss=0.2015 lr=3.18e-03 (95.2s)
+[Epoch 44] loss=0.1976 lr=3.10e-03 (90.2s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.436
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.817
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.420
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.363
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.462
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.507
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.118
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.490
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.524
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.457
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.566
+[Epoch 45] loss=0.1966 mAP=0.4364 mAP50=0.8165 mAP_small=0.3628 (97.5s)
+[Epoch 46] loss=0.1952 lr=2.94e-03 (91.7s)
+[Epoch 47] loss=0.1952 lr=2.86e-03 (93.2s)
+[Epoch 48] loss=0.1963 lr=2.78e-03 (93.2s)
+[Epoch 49] loss=0.1923 lr=2.70e-03 (91.7s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.441
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.811
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.428
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.356
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.468
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.512
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.116
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.498
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.529
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.451
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.553
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.578
+[Epoch 50] loss=0.1930 mAP=0.4405 mAP50=0.8106 mAP_small=0.3563 (90.2s)
+    * new best mAP 0.4405 -> best.pth
+[Epoch 51] loss=0.1922 lr=2.54e-03 (93.6s)
+[Epoch 52] loss=0.1882 lr=2.46e-03 (98.0s)
+[Epoch 53] loss=0.1949 lr=2.38e-03 (96.1s)
+[Epoch 54] loss=0.1883 lr=2.30e-03 (94.8s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.434
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.800
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.420
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.354
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.462
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.502
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.115
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.491
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.518
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.443
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.542
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.563
+[Epoch 55] loss=0.1914 mAP=0.4335 mAP50=0.8004 mAP_small=0.3536 (94.4s)
+[Epoch 56] loss=0.1906 lr=2.14e-03 (91.7s)
+[Epoch 57] loss=0.1897 lr=2.06e-03 (93.4s)
+[Epoch 58] loss=0.1860 lr=1.98e-03 (92.5s)
+[Epoch 59] loss=0.1828 lr=1.90e-03 (94.4s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.437
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.807
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.434
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.348
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.465
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.511
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.116
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.488
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.520
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.442
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.542
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.575
+[Epoch 60] loss=0.1860 mAP=0.4371 mAP50=0.8071 mAP_small=0.3482 (89.7s)
+[Epoch 61] loss=0.1883 lr=1.74e-03 (99.3s)
+[Epoch 62] loss=0.1847 lr=1.67e-03 (92.1s)
+[Epoch 63] loss=0.1824 lr=1.59e-03 (90.5s)
+[Epoch 64] loss=0.1866 lr=1.52e-03 (94.2s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.445
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.808
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.435
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.367
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.471
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.501
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.118
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.498
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.527
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.467
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.548
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.558
+[Epoch 65] loss=0.1817 mAP=0.4446 mAP50=0.8082 mAP_small=0.3668 (91.9s)
+    * new best mAP 0.4446 -> best.pth
+==============================================================================
+Person Detector Training  |  2026-07-02 08:57:36
+==============================================================================
+  data_dir        : ./site dataset.v1-person-detection.coco
+  train_split     : train
+  val_split       : valid
+  ann_name        : _annotations.coco.json
+  arch            : fasterrcnn
+  no_pretrained   : False
+  min_size        : 800
+  max_size        : 1333
+  epochs          : 100
+  batch_size      : 20
+  grad_accum      : 5
+  lr              : 0.005
+  momentum        : 0.9
+  weight_decay    : 0.0005
+  optimizer       : sgd
+  warmup_epochs   : 3.0
+  clip_grad       : 5.0
+  workers         : 4
+  eval_interval   : 5
+  no_amp          : False
+  device          : cuda
+  output_dir      : ./runs/person_detector
+  resume          : runs/person_detector/last.pth
+  seed            : 42
+  device (resolved): cuda (NVIDIA GeForce RTX 3090)
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+
+Dataset: 1425 train / 161 val images
+AMP: True | steps/epoch: 14 | effective batch: 100
+==============================================================================
+Person Detector Training  |  2026-07-02 08:58:19
+==============================================================================
+  data_dir        : ./site dataset.v1-person-detection.coco
+  train_split     : train
+  val_split       : valid
+  ann_name        : _annotations.coco.json
+  arch            : fasterrcnn
+  no_pretrained   : False
+  min_size        : 800
+  max_size        : 1333
+  epochs          : 100
+  batch_size      : 4
+  grad_accum      : 5
+  lr              : 0.005
+  momentum        : 0.9
+  weight_decay    : 0.0005
+  optimizer       : sgd
+  warmup_epochs   : 3.0
+  clip_grad       : 5.0
+  workers         : 4
+  eval_interval   : 5
+  no_amp          : False
+  device          : cuda
+  output_dir      : ./runs/person_detector
+  resume          : runs/person_detector/best.pth
+  seed            : 42
+  device (resolved): cuda (NVIDIA GeForce RTX 3090)
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+
+Dataset: 1425 train / 161 val images
+AMP: True | steps/epoch: 71 | effective batch: 20
+
+Resumed from runs/person_detector/best.pth @ epoch 65 (best mAP 0.4446)
+[Epoch 66] loss=0.1806 lr=1.37e-03 (163.3s)
+[Epoch 67] loss=0.1813 lr=1.30e-03 (113.3s)
+[Epoch 68] loss=0.1766 lr=1.23e-03 (105.3s)
+[Epoch 69] loss=0.1769 lr=1.16e-03 (97.8s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.439
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.800
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.422
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.351
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.466
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.514
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.115
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.495
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.522
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.442
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.547
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.574
+[Epoch 70] loss=0.1750 mAP=0.4388 mAP50=0.8000 mAP_small=0.3511 (96.3s)
+[Epoch 71] loss=0.1737 lr=1.02e-03 (99.4s)
+[Epoch 72] loss=0.1736 lr=9.59e-04 (96.7s)
+[Epoch 73] loss=0.1696 lr=8.96e-04 (96.8s)
+[Epoch 74] loss=0.1701 lr=8.35e-04 (93.7s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.442
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.803
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.445
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.356
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.468
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.515
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.116
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.497
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.522
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.447
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.544
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.573
+[Epoch 75] loss=0.1710 mAP=0.4416 mAP50=0.8029 mAP_small=0.3559 (95.5s)
+[Epoch 76] loss=0.1695 lr=7.18e-04 (95.6s)
+[Epoch 77] loss=0.1723 lr=6.62e-04 (91.9s)
+[Epoch 78] loss=0.1698 lr=6.08e-04 (93.4s)
+[Epoch 79] loss=0.1671 lr=5.56e-04 (95.1s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.442
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.802
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.450
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.360
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.470
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.513
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.115
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.496
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.524
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.445
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.549
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.574
+[Epoch 80] loss=0.1707 mAP=0.4423 mAP50=0.8024 mAP_small=0.3604 (97.8s)
+[Epoch 81] loss=0.1701 lr=4.59e-04 (93.8s)
+[Epoch 82] loss=0.1711 lr=4.13e-04 (93.2s)
+[Epoch 83] loss=0.1718 lr=3.69e-04 (97.7s)
+[Epoch 84] loss=0.1670 lr=3.28e-04 (96.3s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.441
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.805
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.440
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.363
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.467
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.510
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.116
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.495
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.523
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.450
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.571
+[Epoch 85] loss=0.1629 mAP=0.4410 mAP50=0.8046 mAP_small=0.3630 (97.1s)
+[Epoch 86] loss=0.1670 lr=2.53e-04 (109.3s)
+[Epoch 87] loss=0.1660 lr=2.18e-04 (93.7s)
+[Epoch 88] loss=0.1639 lr=1.86e-04 (90.4s)
+[Epoch 89] loss=0.1659 lr=1.57e-04 (89.7s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.442
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.812
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.442
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.361
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.468
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.508
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.115
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.495
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.523
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.458
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.542
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.570
+[Epoch 90] loss=0.1661 mAP=0.4421 mAP50=0.8119 mAP_small=0.3605 (96.8s)
+[Epoch 91] loss=0.1636 lr=1.05e-04 (95.1s)
+[Epoch 92] loss=0.1646 lr=8.34e-05 (89.5s)
+[Epoch 93] loss=0.1615 lr=6.40e-05 (92.6s)
+[Epoch 94] loss=0.1627 lr=4.71e-05 (92.8s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.443
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.804
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.444
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.361
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.469
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.509
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.116
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.496
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.521
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.450
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.542
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.573
+[Epoch 95] loss=0.1653 mAP=0.4426 mAP50=0.8043 mAP_small=0.3611 (91.4s)
+[Epoch 96] loss=0.1627 lr=2.09e-05 (93.7s)
+[Epoch 97] loss=0.1639 lr=1.18e-05 (99.0s)
+[Epoch 98] loss=0.1623 lr=5.24e-06 (91.5s)
+[Epoch 99] loss=0.1638 lr=1.31e-06 (90.6s)
+Loading and preparing results...
+DONE (t=0.00s)
+creating index...
+index created!
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.444
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.796
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.447
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.365
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.470
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.516
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.116
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.497
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.524
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.449
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.546
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.575
+[Epoch 100] loss=0.1641 mAP=0.4438 mAP50=0.7965 mAP_small=0.3653 (93.4s)
+
+==============================================================================
+Training done in 0:58:44 | best mAP = 0.4446
+Weights: ./runs/person_detector\best.pth
+==============================================================================

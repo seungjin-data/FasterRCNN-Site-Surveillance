@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Large or generated artefacts (not tracked)
+weights/
+runs/
+work/
+output/
+*.pth
+*.pt
+*.onnx
+
+# Dataset images (obtain from the provider; see docs/DATASET.md)
+annotations/**/*.jpg
+annotations/**/*.jpeg
+annotations/**/*.png
+
+# Figure previews written next to the PDFs
+figures/*.png
+
+# OS
+.DS_Store
+Thumbs.db
