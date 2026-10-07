@@ -1,5 +1,7 @@
 # Fine-Tuning Faster R-CNN for Person Detection in Site Surveillance Imagery
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23214797.svg)](https://doi.org/10.5281/zenodo.23214797)
+
 Reproducibility package for the Machine Vision and Applications manuscript.
 
 **Author:** S. J. Kim, Institute for Industrial Policy Studies (IPS), aSSIST University, Seoul, Republic of Korea
@@ -117,5 +119,9 @@ pretrained weights and software). See [`LICENSE`](LICENSE) for details.
 
 ## Citation
 
-Citation metadata is in [`CITATION.cff`](CITATION.cff). The Zenodo DOI of the archival release will be added here
-and in `CITATION.cff` after the archive is published.
+Versioned archive of this repository (v1.0.0) on Zenodo: <https://doi.org/10.5281/zenodo.23214797>
+
+> Kim, S. J. (2026). *Reproducibility Package for Fine-Tuning Faster R-CNN for Person Detection in Site Surveillance
+> Imagery* (Version 1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23214797
+
+Machine-readable metadata: [`CITATION.cff`](CITATION.cff).

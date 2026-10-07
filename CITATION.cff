@@ -3,6 +3,8 @@ message: "If you use this software or the accompanying results, please cite it u
 type: software
 title: "Fine-Tuning Faster R-CNN for Person Detection in Site Surveillance Imagery: reproducibility package"
 version: 1.0.0
+doi: 10.5281/zenodo.23214797
+date-released: 2026-10-07
 license: MIT
 authors:
   - family-names: Kim
@@ -11,6 +13,10 @@ authors:
     orcid: "https://orcid.org/0009-0007-6876-0777"
 repository-code: "https://github.com/seungjin-data/FasterRCNN-Site-Surveillance"
 url: "https://github.com/seungjin-data/FasterRCNN-Site-Surveillance"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23214797
+    description: "Zenodo archive of release v1.0.0"
 abstract: >-
   Code, COCO-format annotations, stored test-set detections, bootstrap outputs, intermediate analysis files and
   figure-generation scripts for a controlled empirical machine-vision study of domain-specific fine-tuning of

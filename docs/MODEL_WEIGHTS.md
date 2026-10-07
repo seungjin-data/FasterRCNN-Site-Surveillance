@@ -1,9 +1,9 @@
 # Model weights
 
 The trained weights are **not stored in this Git repository**. The table below identifies each file exactly so that a
-downloaded copy can be verified (`sha256sum <file>`). Each weight file will be included in the Zenodo archive of this
-study only if its redistribution permission is clear (see "Redistribution status"). Otherwise, the file is documented
-here with instructions to reproduce it.
+downloaded copy can be verified (`sha256sum <file>`). The Zenodo archive v1.0.0 (https://doi.org/10.5281/zenodo.23214797)
+contains no weight files. A weight file may be added to a later archive version only if its redistribution permission
+is clear (see "Redistribution status"); otherwise it stays documented here with instructions to reproduce it.
 
 ## Files
 
